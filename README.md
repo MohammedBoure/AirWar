@@ -1,4 +1,4 @@
-# Airplane Game
+# AirWre Game
 
 This is a simple 2D airplane game developed by two beginners using Pygame. The game features multiple airplane types with unique abilities, several maps, and an online mode using sockets. 
 
@@ -23,7 +23,7 @@ This is a simple 2D airplane game developed by two beginners using Pygame. The g
 ### Additional Controls:
 - **Revive Player**: **R**
 
-## Airplane Types
+## AirWre Types
 
 1. **Plane 0**: Shoots two projectiles at once.
 2. **Plane 1**: Each time it hits the enemy, it takes away their health.
@@ -32,7 +32,7 @@ This is a simple 2D airplane game developed by two beginners using Pygame. The g
 5. **Plane 4**: Has a large ammo capacity. Once the ammo is exhausted, wait for it to reload, and your health will also regenerate.
 
 ## Game Maps
-The game comes with **10 unique maps**. Each map offers different challenges and obstacles that require strategic gameplay.
+The game comes with **10 unique maps**.
 
 ## Project Details
 - **Date of Creation**: 2023/12/10
@@ -65,8 +65,6 @@ The game now supports **online mode** through sockets. The setup for online play
 - `main.py`: Main game code with game logic and control flow.
 - `config.py`: Configuration file to set up the IP and port for network play.
 - `client.py`: Client-side code for connecting to the server and playing the game.
-- `server.py`: Server-side code to handle the connection and game state.
-- `README.md`: This file.
 
 ## Game Screenshots
 
