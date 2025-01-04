@@ -21,7 +21,7 @@ This is a simple 2D airplane game developed by two beginners using Pygame. The g
 - **Hide**: **H** (To hide behind barriers)
 
 ### Additional Controls:
-- **Revive Player**: **R**
+- **Revive Player**: **SPACE**
 
 ## AirWre Types
 
