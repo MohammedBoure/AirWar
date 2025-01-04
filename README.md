@@ -1,6 +1,6 @@
 # Airplane Game
 
-This is a simple 2D airplane game developed by two beginners using Pygame. The game features multiple airplane types with unique abilities, several maps, and an online mode using sockets.
+This is a simple 2D airplane game developed by two beginners using Pygame. The game features multiple airplane types with unique abilities, several maps, and an online mode using sockets. 
 
 ## Control Buttons
 
@@ -35,22 +35,38 @@ This is a simple 2D airplane game developed by two beginners using Pygame. The g
 The game comes with **10 unique maps**. Each map offers different challenges and obstacles that require strategic gameplay.
 
 ## Project Details
-- **Date of Creation**: 2023/12/01
+- **Date of Creation**: 2023/12/10
+- **Last Update**: 2025/01/04
 - **Languages Used**: Python (Pygame)
 - **Developers**: Two beginners in game development
 
 ## Online Mode
-The game also supports an **online mode** through sockets. The client file will be added later for connecting players over the network.
+
+The game now supports **online mode** through sockets. The setup for online play is as follows:
+
+1. **Config File**: You can configure the IP address and port for connecting the two devices in the `config.py` file.
+2. **Server Mode**: To activate the network mode, set the `server_controller` variable to `True` in the main game code. Ensure that the IP address is correctly set on both devices.
+3. **Client Mode**: On the second device, use the `client.py` file to connect to the server and play together. Be sure to set the correct IP in the client configuration.
+4. **Running the Game**:
+   - First, run the main game code on the **server device**.
+   - Then, run the **client.py** file on the **client device**.
+
+> Note: Both devices must have access to the network and use the same port for communication.
 
 ## How to Play
+
 - Player 1 uses **Z**, **S**, **D**, **Q** to control their airplane and **Space** to shoot.
 - Player 2 uses **Up**, **Down**, **Right**, **Left** to control their airplane and **G** to shoot.
 - Press **R** to revive a player when they lose their life.
 - Players can hide behind barriers using the **9** (Player 1) or **H** (Player 2) keys. But be cautious! Staying behind for too long may result in death.
 
-Enjoy the game!
+## File Structure
 
----
+- `main.py`: Main game code with game logic and control flow.
+- `config.py`: Configuration file to set up the IP and port for network play.
+- `client.py`: Client-side code for connecting to the server and playing the game.
+- `server.py`: Server-side code to handle the connection and game state.
+- `README.md`: This file.
 
 ## Game Screenshots
 
@@ -58,3 +74,4 @@ Enjoy the game!
 ![Screenshot 2](for_README/image2.png)  
 ![Screenshot 3](for_README/image3.png)
 
+Enjoy the game!
